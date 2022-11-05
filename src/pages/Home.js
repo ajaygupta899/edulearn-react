@@ -6,8 +6,8 @@ export default class Home extends React.Component{
              <div className="main">
         <div className="navbar" style={{display:'inline-flex'}}>
             <div className="logo-image">
-                <img src={"assets/images/cutm logo.png"} alt="" className="img-fluid"/>    
-          </div>
+                <img src={"assets/images/cutm-logo.png"} alt="" className="img-fluid"/>    
+        </div>
             <div className="iconf" style={{float:'left'}}>
                 <div id="main">
                    <p aling="left"> <button className="openbtn" onClick="openNav()">☰ Menu</button> </p>   
