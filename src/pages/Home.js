@@ -1,5 +1,15 @@
 import React from 'react';
+
 export default class Home extends React.Component{
+    openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+      }
+
+     closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      } 
     render(){ return(
 <div>
         <div>
@@ -10,12 +20,12 @@ export default class Home extends React.Component{
         </div>
             <div className="iconf" style={{float:'left'}}>
                 <div id="main">
-                   <p aling="left"> <button className="openbtn" onClick="openNav()">☰ Menu</button> </p>   
+                   <p aling="left"> <button className="openbtn" onClick={this.openNav}>☰ Menu</button> </p>   
                   </div>    
             </div>
         </div> 
         <div id="mySidebar" className="sidebar">
-            <a href="/#" className="closebtn" onclick="closeNav()">×</a>
+            <a href="/#" className="closebtn" onClick={this.closeNav}>×</a>
             <a href="/#">About</a>
             <a href="/#">Services</a>
             <a href="/#">Contact</a>
